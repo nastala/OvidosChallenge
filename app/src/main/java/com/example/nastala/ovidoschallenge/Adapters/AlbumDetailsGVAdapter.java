@@ -50,7 +50,7 @@ public class AlbumDetailsGVAdapter extends BaseAdapter {
         Photo photo = photos.get(position);
 
         Glide.with(ivPhoto.getContext())
-                .load(photo.getUrl())
+                .load(photo.getThumbnailUrl())
                 .into(ivPhoto);
 
         tvTitle.setText(photo.getTitle());
